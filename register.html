@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">O&A</a></li>
+            </ul>
+
+            <button>
+                <a href="login-page.html">Log in</a>
+            </button>
+
+        </nav>
+    </div>
+
+
+    <div class="wrapper">
+        <form action="">
+            <h1>Register</h1>
+            <div class="input-box1">
+                <input type="text" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+
+            <div class="input-box2">
+                <input class="ip" type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box3">
+                <input type="password" id="myInput" class="ip1" placeholder="Password" required>
+
+                <i class='bx bxs-lock-alt' ></i>
+
+                <label><input type="checkbox" type="password" class="ip2" onclick="myFunction()" id="myInput">Show Password</label>
+            </div>
+
+            <div class="input-box4">
+                <input type="password" id="myInput" placeholder="Conform password" required class="ip1">
+
+                <i class='bx bxs-lock-alt' ></i>
+
+                <label><input class="ip2" type="checkbox" type="password" onclick="myFunctionn()" id="mysec">Show Password</label>
+            </div>
+
+            <div class="rm">
+                <label><input type="checkbox">Remember me</label>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="login-link">
+                <p>Have an account? <a href="login-page.html">Log in</a></p>
+            </div>
+        </form>
+    </div>
+
+    <Script>
+        function myFunction() {
+            var x = document.getElementById("myInput")
+
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </Script>
+</body>
+</html>
